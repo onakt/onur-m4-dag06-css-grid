@@ -262,9 +262,20 @@ article .pris {
   grid-column: 1 / -1;
 }
 
-#om-oss img {
+#om-oss-kafe {
   grid-row: 2 / 4;
   grid-column: 2;
+}
+
+#om-oss .bildgalleri {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#om-oss .bildgalleri h3 {
+  grid-column: 1 / -1;
 }
 
 /* Steg 6: Grid eller Flex?
