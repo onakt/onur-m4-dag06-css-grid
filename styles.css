@@ -236,3 +236,16 @@ article .pris {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
 }
+
+#om-oss {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#om-oss h2 {
+  grid-column: 1 / -1;
+}
+
+#om-oss img {
+  grid-row: span 2;
+}
