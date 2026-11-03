@@ -231,12 +231,16 @@ article .pris {
   margin-top: auto;
 }
 
+/* Grid: Valdes eftersom korten ska placeras i
+   responsiva kolumner med jämn storlek. */
 .meny-lista {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
 }
 
+/* Grid: Valdes för att skapa två kolumner och
+   kunna styra placeringen av text, rubrik och bild. */
 #om-oss {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -251,3 +255,17 @@ article .pris {
   grid-row: 2 / 4;
   grid-column: 2;
 }
+
+/* Steg 6: Grid eller Flex?
+
+Flex:
+  Dimension:  En - rad ELLER kolumn
+  Utgår från: Innehållet (children bestämmer)
+  Bra för:    Menyer, knappar, komponenter, rader av saker
+  Tumregel:   Inuti komponenter
+
+Grid:
+  Dimension:  Två - rader OCH kolumner
+  Utgår från: Layouten (rutnätet bestämmer)
+  Bra för:    Sidlayout, kortgallerier, formulär med kolumner
+  Tumregel:   Sidans helhet */
